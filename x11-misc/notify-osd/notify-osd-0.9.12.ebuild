@@ -12,7 +12,7 @@ SRC_URI="http://launchpad.net/${PN}/${PV}/${PV}/+download/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND=">=dev-libs/dbus-glib-0.76
