@@ -26,9 +26,9 @@ src_prepare() {
 	epatch "${FILESDIR}/gconftool.patch"
 }
 
-src_install() {
+src_compile() {
 	# we must delay gconf schema installation due to sandbox
 	export GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL="1"
 
-	distutils_src_install
+	distutils_src_compile
 }
