@@ -4,7 +4,7 @@
 
 EAPI="2"
 
-inherit eutils distutils
+inherit eutils distutils gnome2
 
 DESCRIPTION="A GMail notifier taking advantage of notify-osd and indicator-applet."
 HOMEPAGE="https://launchpad.net/gm-notify"
