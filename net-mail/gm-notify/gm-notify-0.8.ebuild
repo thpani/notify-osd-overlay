@@ -16,7 +16,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="dev-python/python-indicate
-	dev-python/python-notify
+	dev-python/notify-python
 	>=dev-python/gst-python-0.10
 	dev-python/gconf-python
 	dev-python/pygtk"
