@@ -32,3 +32,9 @@ src_compile() {
 
 	distutils_src_compile
 }
+
+src_install() {
+	distutils_src_install
+
+	unset GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL
+}
