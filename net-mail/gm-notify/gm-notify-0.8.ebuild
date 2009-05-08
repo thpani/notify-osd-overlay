@@ -3,6 +3,7 @@
 # $Header: $
 
 EAPI="2"
+NEED_PYTHON=2.5
 
 inherit eutils distutils gnome2-utils
 
@@ -24,6 +25,7 @@ RDEPEND=""
 
 src_prepare() {
 	epatch "${FILESDIR}/gconftool.patch"
+	epatch "${FILESDIR}/with_stmt.patch"
 }
 
 src_install() {

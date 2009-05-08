@@ -1,0 +1,11 @@
+diff -ur gm-notify-0.8-orig/gmxdgsoundlib.py gm-notify-0.8/gmxdgsoundlib.py
+--- gm-notify-0.8-orig/gmxdgsoundlib.py	2009-05-08 17:59:51.000000000 +0200
++++ gm-notify-0.8/gmxdgsoundlib.py	2009-05-08 18:00:14.000000000 +0200
+@@ -23,6 +23,7 @@
+ ### The currently selected soundtheme is stored in gconf at /desktop/gnome/sound/theme_name
+ ### call findsoundfile(themename) to get the path
+ import os
++from __future__ import with_statement
+ 
+ def findthemedir(name):
+     '''reads environment variables and trys to find a suitable directory for a given
