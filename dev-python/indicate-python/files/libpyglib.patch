@@ -1,0 +1,24 @@
+diff -ur indicate-python-0.0.3-orig/src/Makefile.am indicate-python-0.0.3/src/Makefile.am
+--- indicate-python-0.0.3-orig/src/Makefile.am	2009-05-08 16:58:03.000000000 +0200
++++ indicate-python-0.0.3/src/Makefile.am	2009-05-08 16:58:20.000000000 +0200
+@@ -18,7 +18,7 @@
+ indicatedir = $(pkgpyexecdir)/indicate
+ indicate_LTLIBRARIES = _indicate.la
+ 
+-_indicate_la_LDFLAGS = -module -avoid-version -export-symbols-regex init_indicate -lpyglib-2.0-python2.6
++_indicate_la_LDFLAGS = -module -avoid-version -export-symbols-regex init_indicate -lpyglib-2.0
+ _indicate_la_LIBADD = $(INDICATE_PYTHON_LIBS) 
+ _indicate_la_SOURCES = indicatemodule.c
+ nodist__indicate_la_SOURCES = indicate.c
+diff -ur indicate-python-0.0.3-orig/src/Makefile.in indicate-python-0.0.3/src/Makefile.in
+--- indicate-python-0.0.3-orig/src/Makefile.in	2009-05-08 16:58:03.000000000 +0200
++++ indicate-python-0.0.3/src/Makefile.in	2009-05-08 16:58:29.000000000 +0200
+@@ -225,7 +225,7 @@
+ pkgindicate_PYTHON = __init__.py
+ indicatedir = $(pkgpyexecdir)/indicate
+ indicate_LTLIBRARIES = _indicate.la
+-_indicate_la_LDFLAGS = -module -avoid-version -export-symbols-regex init_indicate -lpyglib-2.0-python2.6
++_indicate_la_LDFLAGS = -module -avoid-version -export-symbols-regex init_indicate -lpyglib-2.0
+ _indicate_la_LIBADD = $(INDICATE_PYTHON_LIBS) 
+ _indicate_la_SOURCES = indicatemodule.c
+ nodist__indicate_la_SOURCES = indicate.c
