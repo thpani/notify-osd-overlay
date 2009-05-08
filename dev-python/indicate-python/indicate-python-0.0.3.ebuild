@@ -5,7 +5,7 @@
 EAPI="2"
 NEED_PYTHON=2.3.5
 
-inherit eutils gnome2 python
+inherit eutils python
 
 DESCRIPTION="Python bindings for libindicate."
 HOMEPAGE="https://launchpad.net/indicator-applet"
@@ -23,4 +23,11 @@ RDEPEND=""
 
 src_prepare() {
 	epatch "${FILESDIR}/libpyglib.patch"
+}
+
+src_compile() {
+	# we must delay gconf schema installation due to sandbox
+	export GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL="1"
+
+	default
 }
