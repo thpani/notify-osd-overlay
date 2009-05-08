@@ -1,9 +1,11 @@
 diff -ur gm-notify-0.8-orig/setup.py gm-notify-0.8/setup.py
---- gm-notify-0.8-orig/setup.py	2009-05-08 17:05:56.000000000 +0200
-+++ gm-notify-0.8/setup.py	2009-05-08 17:06:07.000000000 +0200
-@@ -19,4 +19,4 @@
- 
- print "Installing gconf schema file"
- f = open("/dev/null", "w") # redirect stdout to /dev/null
+--- gm-notify-0.8-orig/setup.py	2009-05-08 17:41:29.000000000 +0200
++++ gm-notify-0.8/setup.py	2009-05-08 17:41:55.000000000 +0200
+@@ -16,7 +16,3 @@
+                     ('/usr/share/locale/da/LC_MESSAGES', ['po/da/gm-notify.mo']),
+                     ('/usr/share/locale/de/LC_MESSAGES', ['po/de/gm-notify.mo']),
+                     ('/usr/share/locale/ca/LC_MESSAGES', ['po/ca/gm-notify.mo'])] )
+-
+-print "Installing gconf schema file"
+-f = open("/dev/null", "w") # redirect stdout to /dev/null
 -subprocess.Popen("gconftool --install-schema-file=data/gm-notify.schema", shell=True, stdout=f)
-+subprocess.Popen("gconftool-2 --install-schema-file=data/gm-notify.schema", shell=True, stdout=f)
