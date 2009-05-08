@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="dev-python/python-indicate
+DEPEND="dev-python/indicate-python
 	dev-python/notify-python
 	>=dev-python/gst-python-0.10
 	dev-python/gconf-python
