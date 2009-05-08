@@ -28,12 +28,15 @@ src_prepare() {
 	epatch "${FILESDIR}/with_stmt.patch"
 }
 
+pkg_preinst() {
+	gnome2_icon_savelist
+}
+
 src_install() {
 	distutils_src_install
 
 	insinto /etc/gconf/schemas/
 	newins data/gm-notify.schema gm-notify.schemas
 
-	gnome2_gconf_savelist
 	gnome2_gconf_install
 }
