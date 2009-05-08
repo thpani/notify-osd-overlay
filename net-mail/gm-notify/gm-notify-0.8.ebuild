@@ -4,7 +4,7 @@
 
 EAPI="2"
 
-inherit eutils distutils gnome2
+inherit eutils distutils
 
 DESCRIPTION="A GMail notifier taking advantage of notify-osd and indicator-applet."
 HOMEPAGE="https://launchpad.net/gm-notify"
@@ -24,4 +24,11 @@ RDEPEND=""
 
 src_prepare() {
 	epatch "${FILESDIR}/gconftool.patch"
+}
+
+src_install() {
+	# we must delay gconf schema installation due to sandbox
+	export GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL="1"
+
+	distutils_src_install
 }
