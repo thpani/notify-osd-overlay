@@ -17,7 +17,13 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND=""
-RDEPEND=""
+RDEPEND="dev-python/indicate-python
+	dev-python/notify-python
+	dev-python/gst-python
+	dev-python/pygtk
+	dev-python/gconf-python
+	dev-python/twisted-mail
+	dev-python/gnome-desktop-python"
 
 src_prepare() {
 	epatch "${FILESDIR}/${PN}_py2.5.patch"
