@@ -12,12 +12,12 @@ https://wiki.ubuntu.com/NotificationDevelopmentGuidelines.
 Setting up layman
 -----------------
 
-Edit /etc/layman/layman.cfg:
+Edit `/etc/layman/layman.cfg`:
 
     overlays  : http://www.gentoo.org/proj/en/overlays/layman-global.txt
                 http://pani.webhop.org/download/overlays.xml
 
-and add the overlay using layman.
+and add the overlay using layman:
 
     $ layman -f
     $ layman -a notify-osd
