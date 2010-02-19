@@ -5,9 +5,9 @@ README
 
 A Gentoo overlay for porting NotifyOSD from Ubuntu.
 
-For more information on NotifyOSD, refer to  
-[https://wiki.ubuntu.com/NotifyOSD][] and  
-[https://wiki.ubuntu.com/NotificationDevelopmentGuidelines][].
+For more information on NotifyOSD, refer to
+[Ubuntu Wiki :: NotifyOSD](https://wiki.ubuntu.com/NotifyOSD) and
+[Ubuntu Wiki :: NotificationDevelopmentGuidelines](https://wiki.ubuntu.com/NotificationDevelopmentGuidelines).
 
 Setting up layman
 -----------------
